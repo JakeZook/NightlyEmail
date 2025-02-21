@@ -1,0 +1,86 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #1a1a1a; /* Dark background for the body */
+	color: #fff; /* White text color for contrast */
+}
+
+.container {
+	max-width: 800px;
+	margin: 30px auto;
+	padding: 20px;
+	background-color: #000000; /* Slightly lighter black for the container */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+h1 {
+	text-align: center;
+	color: #220881; /* Cobalt/Purple color for the header */
+	font-size: 52px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+fieldset {
+	border: 1px solid #220881; /* Indigo (a purple shade) border for fieldsets */
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background-color: #000000; /* Dark background for fieldsets */
+}
+
+legend {
+	font-weight: bold;
+	font-size: 32px;
+	color: #5b0881; /* Cobalt/Purple color for the legend text */
+}
+
+label {
+	margin: 5px 0;
+	font-weight: bold;
+	color: #fff; /* White text for labels */
+}
+
+input,
+textarea {
+	margin-bottom: 10px;
+	padding: 8px;
+	border: 1px solid #220881; /* Purple border for inputs and textareas */
+	border-radius: 4px;
+	background-color: #383838; /* Dark background for input fields */
+	color: #fff; /* White text inside inputs */
+}
+
+input[type="text"],
+textarea {
+	width: 100%;
+}
+
+button {
+	background-color: #220881; /* Cobalt color for button background */
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #4b0082; /* Indigo color for hover effect */
+}
+
+textarea {
+	resize: vertical;
+}
+
+@media (max-width: 600px) {
+	.container {
+		margin: 20px;
+	}
+}

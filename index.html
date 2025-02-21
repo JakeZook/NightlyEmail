@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Employee Daily Report</title>
+		<link rel="stylesheet" href="styles.css" />
+		<!-- EmailJS SDK -->
+		<script
+			type="text/javascript"
+			src="https://cdn.emailjs.com/dist/email.min.js"
+		></script>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init({
+					publicKey: "DQVGu9QX-hOFSAHha",
+				});
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Daily Report Form</h1>
+			<form id="report-form">
+				<!-- AM Shift -->
+				<fieldset>
+					<legend>AM Shift</legend>
+					<label for="am-mod">MOD (AM):</label>
+					<select id="am-mod" name="am-mod" required>
+						<option value="Jake Z">Jake Z</option>
+						<option value="Vannessa B">Vannessa B</option>
+						<option value="Helen S">Helen S</option>
+						<option value="Hannah C">Hannah C</option>
+					</select>
+					<br />
+					<br />
+					<label for="am-general">General Info (AM):</label>
+					<textarea
+						id="am-general"
+						name="am-general"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="am-customer">Customer Info (AM):</label>
+					<textarea
+						id="am-customer"
+						name="am-customer"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="am-maintenance">Maintenance Info (AM):</label>
+					<textarea
+						id="am-maintenance"
+						name="am-maintenance"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="am-shoutouts">Shout Outs (AM):</label>
+					<textarea id="am-shoutouts" name="am-shoutouts" rows="4"></textarea>
+				</fieldset>
+
+				<!-- MID Shift -->
+				<fieldset>
+					<legend>MID Shift</legend>
+					<label for="mid-mod">MOD (MID):</label>
+					<select id="mid-mod" name="mid-mod" required>
+						<option value="Jake Z">Jake Z</option>
+						<option value="Vannessa B">Vannessa B</option>
+						<option value="Helen S">Helen S</option>
+						<option value="Hannah C">Hannah C</option>
+					</select>
+					<br />
+					<br />
+					<label for="mid-general">General Info (MID):</label>
+					<textarea
+						id="mid-general"
+						name="mid-general"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="mid-customer">Customer Info (MID):</label>
+					<textarea
+						id="mid-customer"
+						name="mid-customer"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="mid-maintenance">Maintenance Info (MID):</label>
+					<textarea
+						id="mid-maintenance"
+						name="mid-maintenance"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="mid-shoutouts">Shout Outs (MID):</label>
+					<textarea id="mid-shoutouts" name="mid-shoutouts" rows="4"></textarea>
+				</fieldset>
+
+				<!-- PM Shift -->
+				<fieldset>
+					<legend>PM Shift</legend>
+					<label for="pm-mod">MOD (PM):</label>
+					<select id="pm-mod" name="pm-mod" required>
+						<option value="Jake Z">Jake Z</option>
+						<option value="Vannessa B">Vannessa B</option>
+						<option value="Helen S">Helen S</option>
+						<option value="Hannah C">Hannah C</option>
+					</select>
+					<br />
+					<br />
+					<label for="pm-general">General Info (PM):</label>
+					<textarea
+						id="pm-general"
+						name="pm-general"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="pm-customer">Customer Info (PM):</label>
+					<textarea
+						id="pm-customer"
+						name="pm-customer"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="pm-maintenance">Maintenance Info (PM):</label>
+					<textarea
+						id="pm-maintenance"
+						name="pm-maintenance"
+						rows="4"
+						required
+					></textarea>
+
+					<label for="pm-shoutouts">Shout Outs (PM):</label>
+					<textarea id="pm-shoutouts" name="pm-shoutouts" rows="4"></textarea>
+				</fieldset>
+
+				<button type="submit">Submit Report</button>
+			</form>
+		</div>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
