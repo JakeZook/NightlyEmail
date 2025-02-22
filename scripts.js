@@ -67,6 +67,7 @@ function sendReportEmail(reportData) {
 		.send("service_ea6xww4", "template_8gr2wqn", {
 			to_email: "jake.zook@playactivate.com",
 			subject: subject,
+			date: formattedDate,
 			"am-mod": reportData["am-mod"],
 			"am-general": reportData["am-general"],
 			"am-customer": reportData["am-customer"],
